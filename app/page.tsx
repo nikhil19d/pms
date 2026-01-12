@@ -1,5 +1,8 @@
+'use client'
+
+import { useRouter } from "next/navigation"
+
+
 export default function Home() {
-  return (
-    <div>hello world</div>
-  );
+  return useRouter().push('/auth');
 }

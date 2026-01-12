@@ -59,8 +59,7 @@ export default function Production() {
   const {
     register,
     handleSubmit,
-    control,
-    formState: { errors }
+    control
   } = useForm<ProductSchema>({
     resolver: zodResolver(productSchema),
     defaultValues: {
